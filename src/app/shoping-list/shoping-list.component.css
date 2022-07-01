@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 300px;
+
+}
+ul a {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 4px;
+    color: #337ab7;
+}

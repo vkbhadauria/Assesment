@@ -1,0 +1,11 @@
+.container{
+    padding: 10px;
+    display: flex;
+    /*background-color: #337ab7;*/
+    justify-content: space-between;
+    border-radius:4px;
+}
+.active{
+    background-color: #337ab7;
+    color:white;
+}

@@ -1,0 +1,20 @@
+<a
+style="cursor: pointer; display:block;text-decoration: none;"
+[routerLink]="index"
+>
+<div class='container' routerLinkActive="active">
+    <div *ngIf="recipe" class="pull-left" >
+            <h4 class="">
+                {{recipe.name}}
+            </h4>
+            <p class="list-group-item-text" style="margin-bottom:0rem">
+                {{recipe.description}} 
+            </p>
+    </div>
+    <div class="pull-right">
+            <span *ngIf='recipe' class="pull-right" style="text-align:right">
+                <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive" style="max-height: 50px;">
+            </span>
+    </div> 
+</div>
+</a>

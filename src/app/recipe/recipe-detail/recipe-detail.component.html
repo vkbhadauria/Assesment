@@ -1,0 +1,15 @@
+<div>
+    <img [src]="recipe.imagePath"
+    style="max-height:200px;width:50%"
+    >
+    <p>{{ recipe.name }}</p>
+    <select (change)="dropdown($event)">
+        <option selected disabled>Manage Recipe</option>
+        <option value="edit recipe">Edit Recipe</option>
+        <option value="shopinglist" (click)="editRecipe()">To Shoping List</option>
+        <option value="delete recipe">Delete Recipe</option>
+    </select>
+    <div class="row">
+        <div class="col-xs-4 ingred"  *ngFor="let i of recipe.ingredients">{{ i.name}}({{i.amount}})</div>
+    </div>
+</div>
